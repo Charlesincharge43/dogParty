@@ -8,16 +8,19 @@ module.exports = {
       "plugin:react/recommended"
     ],
     "parserOptions": {
+        "ecmaVersion": 8,
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
             "jsx": true
         },
         "sourceType": "module"
     },
+    "parser": "babel-eslint",
     "plugins": [
         "react"
     ],
     "rules": {
+        "no-console": "off",
         "indent": [
             "error",
             2
@@ -26,10 +29,7 @@ module.exports = {
             "error",
             "unix"
         ],
-        "quotes": [
-            "error",
-            "single"
-        ],
+        "quotes": 'off',
         "semi": [
             "error",
             "always"
