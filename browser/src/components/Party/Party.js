@@ -21,7 +21,6 @@ const styles = {
 };
 
 export const Party = withStyles(styles)((props) => {
-  // console.log(props);
   const data = props.data;
   return (<div className={props.classes.rowParent}>
     <div className={props.classes.personBox}>

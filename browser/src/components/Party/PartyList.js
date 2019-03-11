@@ -11,7 +11,6 @@ const styles = {
 };
 
 export const PartyList = withStyles(styles)((props) => {
-  // console.log(props);
   return (<div className={props.classes.parent}>
     {props.data.map((individualProps, i) => {
       return (<Party key={i} data={individualProps} />);
